@@ -1,0 +1,196 @@
+.work .info-section {
+  width: 20%;
+}
+.work .content-area {
+  overflow: hidden;
+  background: #fefefe;
+  margin-left: 20%;
+  background-color: white;
+  width: 80%;
+  min-width: 300px;
+  height: 100%;
+}
+.work .content-area .work-section {
+  margin-bottom: 56px;
+}
+.work .content-area .work-section h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 56px;
+}
+.work .content-area .work-section .project-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.work .content-area .work-section .project-section a {
+  text-decoration: none;
+  color: black;
+}
+.work .content-area .work-section .project-section .project-box {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 30px;
+  height: 400px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.work .content-area .work-section .project-section .project-box:hover {
+  -webkit-box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12);
+}
+.work .content-area .work-section .project-section .project-box .grey-bg {
+  background: #efefef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.work .content-area .work-section .project-section .project-box .grey-bg:hover {
+  opacity: 0.9;
+}
+.work .content-area .work-section .project-section .project-box .grey-bg:hover .project-info .project-details {
+  transform: translate3d(200px, 0, 0);
+  opacity: 1;
+}
+.work .content-area .work-section .project-section .project-box .grey-bg:hover .project-info .project-title {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+.work .content-area .work-section .project-section .project-box .grey-bg:hover .project-info .fa-long-arrow-alt-right {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+.work .content-area .work-section .project-section .project-box .grey-bg .project-info {
+  position: absolute;
+  bottom: 0;
+  padding: 56px;
+  width: 100%;
+}
+.work .content-area .work-section .project-section .project-box .grey-bg .project-info .project-details {
+  opacity: 0;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  transform: translate3d(-200px, 0, 0);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.work .content-area .work-section .project-section .project-box .grey-bg .project-info .project-title {
+  opacity: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.6s ease-in-out 0.2s;
+  transform: translate3d(-200px, 0, 0);
+}
+.work .content-area .work-section .project-section .project-box .grey-bg .project-info .fa-long-arrow-alt-right {
+  position: absolute;
+  bottom: 45px;
+  right: 56px;
+  font-size: 2.7rem;
+  transition: transform 0.8s ease-in-out;
+  opacity: 0;
+}
+
+@media (max-width: 767px) {
+  .contact .menu-icon {
+    top: -5px;
+    right: 20px;
+    color: white;
+  }
+  .contact .menu-icon .fa-bars {
+    color: white;
+  }
+  .contact .info-section {
+    padding: 10px 20px;
+    position: static;
+  }
+  .contact .info-section .logo {
+    height: 50px;
+    width: 70px;
+    font-size: 1rem;
+  }
+  .contact .info-section .info-box {
+    display: none;
+  }
+  .contact .content-area {
+    margin-left: 0;
+    width: 100%;
+    overflow: auto;
+  }
+  .contact .content-area .image-container {
+    padding: 0 20px 0;
+    width: 100%;
+    height: auto;
+  }
+  .contact .content-area .image-container .form-section {
+    position: static;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+  .contact .content-area .contact-section {
+    width: 100%;
+    float: left;
+    padding: 20% 20px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact .content-area .image-container {
+    padding: 56px 20px 0;
+    width: 100%;
+  }
+  .contact .content-area .image-container .form-section {
+    position: static;
+    width: 100%;
+  }
+  .contact .content-area .contact-section {
+    width: 70%;
+    float: left;
+    padding: 20% 20px 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact {
+    overflow: hidden;
+  }
+  .contact .content-area .image-container {
+    padding: 56px 20px 0;
+    float: left;
+    width: 100%;
+  }
+  .contact .content-area .image-container .form-section {
+    position: static;
+    width: 100%;
+  }
+  .contact .content-area .contact-section {
+    width: 70%;
+    float: left;
+    padding: 20% 20px 0;
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    overflow: hidden;
+  }
+  .contact .content-area .image-container {
+    padding: 20px 20px 0;
+    float: left;
+  }
+  .contact .content-area .contact-section {
+    width: 70%;
+    float: left;
+    padding: 20% 60px 0;
+    max-width: 800px;
+  }
+}

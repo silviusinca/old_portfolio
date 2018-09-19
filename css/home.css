@@ -1,0 +1,146 @@
+.home .info-section {
+  padding: 54px;
+  width: 35%;
+}
+.home .content-area {
+  background: #fefefe;
+  margin-left: 35%;
+  background-color: white;
+  width: 65%;
+  height: 100%;
+
+}
+.home .content-area .profile-section {
+  max-width: 500px;
+  vertical-align: top;
+  padding: 20% 0 0;
+  display: inline-block;
+}
+.home .content-area .profile-section .profile h1 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1.4rem;
+}
+.home .content-area .profile-section .profile h1 span {
+  color: #4b21ff;
+}
+.home .content-area .profile-section .profile h5 {
+  font-size: 1.3rem;
+  margin: 0 0 2rem;
+}
+.home .content-area .profile-section .profile p {
+  color: #a9a9a9;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0 0 2rem 0;
+}
+.home .content-area .image-container {
+  top: 56px;
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  height: 100%;
+}
+.home .content-area .image-container .user-image {
+  position: absolute;
+  left: -250px;
+  width: 500px;
+  height: calc(100% - 112px);
+  background: url("../img/user.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  .home .menu-icon {
+    top: -5px;
+    right: 20px;
+    color: white;
+  }
+  .home .menu-icon .fa-bars {
+    color: white;
+  }
+  .home .info-section {
+    padding: 10px 20px;
+    position: static;
+  }
+  .home .info-section .logo {
+    height: 50px;
+    width: 70px;
+    font-size: 1rem;
+  }
+  .home .info-section .info-box {
+    display: none;
+  }
+  .home .content-area {
+    margin-left: 0;
+    width: 100%;
+    overflow: auto;
+  }
+  .home .content-area .image-container {
+    padding: 56px 20px 0;
+  }
+  .home .content-area .image-container .user-image {
+    position: static;
+    width: 100%;
+  }
+  .home .content-area .profile-section {
+    width: 70%;
+    float: right;
+    padding: 20% 20px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home .content-area .image-container {
+    padding: 56px 20px 0;
+  }
+  .home .content-area .image-container .user-image {
+    position: static;
+    width: 100%;
+  }
+  .home .content-area .profile-section {
+    width: 70%;
+    float: right;
+    padding: 20% 20px 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home {
+    overflow: hidden;
+  }
+  .home .content-area .image-container {
+    padding: 20px 20px 0;
+    float: left;
+  }
+  .home .content-area .image-container .user-image {
+    position: static;
+    width: 100%;
+  }
+  .home .content-area .profile-section {
+    width: 70%;
+    float: left;
+    padding: 20% 20px 0;
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .home {
+    overflow: hidden;
+  }
+  .home .content-area .image-container {
+    padding: 20px 20px 0;
+    float: left;
+  }
+  .home .content-area .profile-section {
+    width: 70%;
+    float: left;
+    padding: 20% 60px 0;
+    max-width: 800px;
+  }
+}

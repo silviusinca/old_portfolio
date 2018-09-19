@@ -1,0 +1,48 @@
+.logo {
+  border: 5px solid #fff;
+  height: 130px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 0;
+}
+
+.info-section {
+  padding: 54px;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.info-section .info-box {
+  bottom: 60px;
+  position: absolute;
+}
+.info-section .info-box h4 {
+  font-size: 1.1rem;
+  color: #fefefe;
+  margin: 0.7rem 0;
+}
+.info-section .info-box p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fefefe;
+  margin: 0.2rem 0 1.5rem 0;
+}
+.info-section .icon-section a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.info-section .icon-section a:hover {
+  color: #CB0CE8;
+}
+.info-section .icon-section a:first-child {
+  padding: 0 10px 0 0;
+}
